@@ -86,7 +86,6 @@ const controlServings = function (newServings) {
   //Update the recipe servings (in state)
   model.updateServings(newServings);
   //Update teh recipe view
-  // recipeView.render(model.state.recipe);
   recipeView.update(model.state.recipe);
 };
 
@@ -143,7 +142,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResult);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 
 init();
